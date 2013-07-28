@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "dotty": "*",
+    "JSONSelect": "*",
+    "lodash": "*",
+    "passport": "*",
+    "traverse": "*"
+  },
+  "name": "derby-user-providers",
+  "version": "0.0.0",
+  "description": "Add third party provider support to derby-user",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "derby",
+    "user",
+    "authentication",
+    "providers",
+    "twitter",
+    "facebook",
+    "google"
+  ],
+  "author": "psirenny",
+  "license": "BSD"
+}

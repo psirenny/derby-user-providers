@@ -1,0 +1,7 @@
+<script>
+  if (opener && opener.location) {
+    opener.DERBY.app.model.set('_session.user.id', '<%= userId %>');
+    opener.DERBY.app.model.set('_session.user.registered', true);
+  }
+  window.close();
+</script>
