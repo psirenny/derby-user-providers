@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "dotty": "*",
     "JSONSelect": "*",
     "lodash": "*",
     "passport": "*",

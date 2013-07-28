@@ -1,5 +1,4 @@
 var _ = require('lodash')
-  , dotty = require('dotty')
   , fs = require('fs')
   , JSONSelect = require('JSONSelect')
   , passport = require('passport')
@@ -77,7 +76,7 @@ module.exports = function (app, options) {
 
             model.fetch(query, function (err) {
               if (err) return done(err);
-              var foundUserId = dotty.get(query.get(), '0.id');
+              var foundUserId = (query.get() || [{}])[0].id;
               user.id = foundUserId || user.id;
 
               $user.fetch(function (err) {
