@@ -76,7 +76,7 @@ module.exports = function (app, options) {
 
             model.fetch(query, function (err) {
               if (err) return done(err);
-              var foundUserId = (query.get() || [{}])[0].id;
+              var foundUserId = (query.get()[0] || {}).id;
               user.id = foundUserId || user.id;
 
               $user.fetch(function (err) {
