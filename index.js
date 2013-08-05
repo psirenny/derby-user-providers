@@ -102,7 +102,7 @@ module.exports = function (app, options) {
 
                 $user.fetch(function (err) {
                   if (err) return done(err);
-                  $user.set(_.merge($user.get(), user));
+                  $user.set(_.merge($user.get(), user, model.get('$user.defaultUser.' + lvl) || {}));
                   if (mapped[lvl]) $provider.set(mapped[lvl]);
                   $provider.set('id', profileId);
                 });
