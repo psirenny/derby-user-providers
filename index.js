@@ -102,8 +102,17 @@ module.exports = function (app, options) {
 
                 $user.fetch(function (err) {
                   if (err) return done(err);
-                  $user.set(_.merge($user.get(), user, model.get('$user.defaultUser.' + lvl) || {}));
-                  if (mapped[lvl]) $provider.set(mapped[lvl]);
+                  _.each(user, function (val, key) {
+                    $user.set(key, val);
+                  });
+                  _.each(model.get('$user.defaultUser.' + lvl) || {}, function (val, key) {
+                    $user.set(key, val);
+                  });
+                  if (mapped[lvl]) {
+                    _.each(mapped[lvl], function (val, key) {
+                      if (val) $provider.set(key, val);
+                    });
+                  }
                   $provider.set('id', profileId);
                 });
               });
