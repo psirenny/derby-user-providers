@@ -6,7 +6,7 @@
     "traverse": "*"
   },
   "name": "derby-user-providers",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Add third party provider support to derby-user",
   "main": "index.js",
   "scripts": {
