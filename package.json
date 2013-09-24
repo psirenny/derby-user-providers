@@ -12,7 +12,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psirenny/derby-user-providers.git"
+  },
   "keywords": [
     "derby",
     "user",
@@ -23,5 +26,11 @@
     "google"
   ],
   "author": "psirenny",
-  "license": "BSD"
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "ebd0cec784eb31a5b21fcdb2b2c29ab203d00cbc",
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/psirenny/derby-user-providers/issues"
+  }
 }
