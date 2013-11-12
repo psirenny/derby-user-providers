@@ -1,9 +1,7 @@
 {
   "dependencies": {
-    "JSONSelect": "*",
     "lodash": "*",
-    "passport": "*",
-    "traverse": "*"
+    "passport": "*"
   },
   "name": "derby-user-providers",
   "version": "0.2.0",
