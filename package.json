@@ -1,34 +1,36 @@
 {
+  "author": "psirenny <djtorres0@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/psirenny/derby-user-providers/issues"
+  },
   "dependencies": {
     "lodash": "*",
     "passport": "*"
   },
-  "name": "derby-user-providers",
-  "version": "0.2.0",
   "description": "Add third party provider support to derby-user",
+  "gitHead": "ebd0cec784eb31a5b21fcdb2b2c29ab203d00cbc",
+  "keywords": [
+    "authentication",
+    "derby",
+    "facebook",
+    "google",
+    "node",
+    "passport",
+    "providers",
+    "strategy",
+    "twitter",
+    "user"
+  ],
+  "license": "MIT",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "derby-user-providers",
+  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/psirenny/derby-user-providers.git"
   },
-  "keywords": [
-    "derby",
-    "user",
-    "authentication",
-    "providers",
-    "twitter",
-    "facebook",
-    "google"
-  ],
-  "author": "psirenny",
-  "license": "BSD",
-  "readmeFilename": "README.md",
-  "gitHead": "ebd0cec784eb31a5b21fcdb2b2c29ab203d00cbc",
-  "devDependencies": {},
-  "bugs": {
-    "url": "https://github.com/psirenny/derby-user-providers/issues"
-  }
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.3.0"
 }
