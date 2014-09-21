@@ -8,8 +8,8 @@ Installation
 
     $ npm install derby-user-providers --save
 
-Usage
------
+Server Usage
+------------
 
 In your server file, add the middleware:
 
@@ -48,7 +48,33 @@ In your server file, add the middleware:
         providers: {facebook: facebook, google: google}
       }))
 
-Visit */user/auth/facebook*.
+App Usage
+---------
+
+In your view:
+
+    <a href="/user/auth/facebook">Sign in with Facebook</a>
+    <a href="/user/auth/google">Sign in with Google+</a>
+
+Handling events
+---------------
+
+You can handle emitted events.
+
+    var events = require('events');
+    var emitter = new events.EvetEmitter();
+
+    emitter.on('user.auth', function (req, data) {
+      var model = req.getModel();
+      console.log('user ' + data.userId + ' signed in.');
+    });
+
+    expressApp
+      // ...
+      // ...
+      .use(providers({
+        emitter: emitter, ...
+      }))
 
 Routes
 ------
