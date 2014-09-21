@@ -4,8 +4,9 @@
     "url": "https://github.com/psirenny/derby-user-providers/issues"
   },
   "dependencies": {
-    "lodash": "*",
-    "passport": "*"
+    "express": "^4.9.4",
+    "lodash": "^2.4.1",
+    "passport": "^0.2.1"
   },
   "description": "Add third party provider support to derby-user",
   "gitHead": "ebd0cec784eb31a5b21fcdb2b2c29ab203d00cbc",
