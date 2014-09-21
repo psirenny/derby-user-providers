@@ -59,10 +59,10 @@ In your view:
 Handling events
 ---------------
 
-You can handle emitted events.
+You can handle events.
 
     var events = require('events');
-    var emitter = new events.EvetEmitter();
+    var emitter = new events.EventEmitter();
 
     emitter.on('user.auth', function (req, data) {
       var model = req.getModel();
