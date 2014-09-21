@@ -1,7 +1,7 @@
 Derby User Providers
 ====================
 
-Add 3rd party providers to [derby-user](https://github.com/psirenny/derby-user) such as facebook google, twitter, etc…
+Add 3rd party providers to [derby-user](https://github.com/psirenny/derby-user) such as facebook, google, twitter, etc…
 
 Installation
 ------------
