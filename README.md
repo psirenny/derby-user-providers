@@ -31,7 +31,7 @@ In your server file, add the middleware:
         clientID: '...',
         clientSecret: '...',
         authOptions: {scope: ['email']},
-        strategy: require('passport-facebook')
+        strategy: require('passport-facebook').Strategy
       }
     };
 
